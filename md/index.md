@@ -27,8 +27,8 @@ You can choose from the following options to create or open a project:
 
 Use the links below for further help on Sub3 Suite Engines:
 
-1. [Osint](engines/osint.html) Engine.
-2. [Raw]((engines/raw.md) Engine.
+1. [Osint](engines/osint.md) Engine.
+2. [Raw](engines/raw.md) Engine.
 3. [Brute](engines/brute.md) Engine.
 4. [Active](engines/active.md) Engine.
 5. [DNS](engines/dns.md) Engine.
