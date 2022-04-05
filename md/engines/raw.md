@@ -18,10 +18,15 @@ The osint modules are mainly categorized in two major groups; Those that require
 They are further categorized into different sub-groups depending on the type that the osint source majorly deals with.
 
 ### The Osint Source's Sub-groups 
+
 **--> Iana sub-group:** These are the Osint Sources associated with the Iana.
+
 **--> Certificates sub-group:**  These Osint Sources majorly contains resources associating with SSL Certificates gathered for different sites.
+
 **--> Emails sub-group:** These Osint Sources majorly deals with osint of emails.
+
 **--> API sub-group:** These are Osint Sources that contain a variety of osint API endpoints.
+
 **--> Archives sub-group:** These are Osint Sources containing archives of different internet entities.
 
 ## Features 
@@ -39,7 +44,7 @@ They are further categorized into different sub-groups depending on the type tha
 
 1. First Choose the `OSINT module` you want use.
 
-	<img src=image/raw_module.png>
+	<img src=images/raw_module.png>
 	
 	***NOTE:**
 	
@@ -52,7 +57,7 @@ They are further categorized into different sub-groups depending on the type tha
 	
 2. Then choose the `query option` (API Endpoint).
 
-	<img src=image/raw_endpoint.png>
+	<img src=images/raw_endpoint.png>
 	
 3. Enter Target/Targets:
 
