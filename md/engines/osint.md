@@ -53,7 +53,7 @@ They are further categorized into different sub-groups depending on the type tha
 7. SSL Certificate Hash.
 8. CIDR.
 
-The User can choose the input type, out type and module to pull data from.
+*The User can choose the `input type`, `out type` and `module` to pull data from.*
 
 ## Scan Configuration values: 
 You can set configurations for your scan to run on. click **config**, set the values and save the values
@@ -70,7 +70,7 @@ To use the OSINT Engine for enumeration take the following steps:
    
    <img src=images/osint_input.png>
    
-2.Enter Target/Targets:
+2. Enter Target/Targets:
 
 	a. for single target just enter the targets on the lineEdit.
 	
