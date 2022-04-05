@@ -46,12 +46,42 @@ They are further categorized into different sub-groups depending on the type tha
 5. Url.<br>
 6. ASN.<br>
 7. SSL Certificate Hash.<br>
-8. CIDR.<br>
+8. CIDR.<br><br>
 
-<h2> Scan Configuration values: </h2><br>
+The User can choose the input type, out type and module to pull data from.
+
+<h2> Scan Configuration values: </h2>
+You can set configurations for your scan to run on. click <b> config </b>, set the values and save the values<br>
 <b> Timeout - </b> Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000<br>
 <b> No Duplicates - </b> Check to avoid duplicated results of the target<br>
 <b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br>
+
+
+<h2> Example & Usage </h2>
+To use the OSINT Engine for enumeration take the following steps:<br>
+1. Choose The Input and Output type for your scan i.e. if you want to obtain subdomains from an IpAddress then choose an input as IpAddress and output as Subdomains<br>
+   e.g to obtain subdomains for <b>eExample.com</b><br>
+   <img src=images/osint_input.png><br><br>
+   
+2.Enter Target/Targets:<br>
+	a. for single target just enter the targets on the lineEdit.<br>
+	<img src=images/osint_target.png><br>
+	
+	b. For multiple targets; check the <b> Multiple Targets </b> checkbox and add your targets to the listView.<br>
+	<img src=images/osint_targets.png><br><br>
+	
+3. Choose OSINT modules to use. Check the check-boxes of the modules you want to pull data from. You can check from one to as many as you want.<br>
+	<img src=images/osint_modules.png><br><br>
+	
+	<i><b> NOTE:</b><br>
+	For modules in the <b> API Keys Required</b> category you must have an API Key to query that module. You can obtain API Keys by opening API Keys Module -> scroll to your module of choice and
+	click <b> Get... </b> and it will direct you to the page where you can obtain the API key, Enter the Key and Save.<br>
+	<img src=images/osint_key.png><br><br>
+	<img src=images/apikeys.png><br>
+	
+4. Start the Scan. click Start to Start the scan and wait for results.<br><br>
+
+5. After the scan is finished and you've obtained the results, several actions can be performed on the obtained results.
 
 <h2> Actions: </h2>
 
