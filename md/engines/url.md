@@ -1,25 +1,53 @@
-# URL Engine
+# URL Engine 
 
-## What is?
+***Disclaimer 1:** This is a very simple documentation on the Tool. It still doesn't contain many information on the many features of the tool & on how to effectively use the tool. Help improve the [documentation](https://github.com/3nock/s3s_doc).*
 
-**URL -** Uniform Resource Locator, colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. 
+***Disclaimer 2:** Incase of an unexpected error or erronous results please reach out by openning an [issue](https://github.com/3nock/sub3suite/issues) on the repo or on [Telegram](https://t.me/sub3suite) chat*.
+
+## What is? 
+
+URL -** Uniform Resource Locator, colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. 
 A URL is a specific type of Uniform Resource Identifier (URI), although many people use the two terms interchangeably. 
 URLs occur most commonly to reference web pages (http/https) but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications.
-[reference](https://en.wikipedia.org/wiki/URL)
+[reference](https://en.wikipedia.org/wiki/URL).
 
-**URL Engine -** Is used to enumerate most relevant information about a given URL by querying it and obtainig results from the reponse.
+You can obtain URL from the [OSINT Engine](./engines/osint.html) of Sub3 Suite
 
-## Features
+## Input Output 
 
-## Usage & Examples
+**Input:** URL
+**Output:** URL Info: status code, banner(server) and content type
 
-Help improve the [documentation](https://github.com/3nock/s3s_doc)
+## Features: 
 
-## References
+**Multiple Targets search:** Search mulitple targets and the enumerator will provide the results for every targets.
 
 
-## NOTE:
+## Scan Configuration values: 
+**Threads -** Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
+**Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+**No Duplicates -** Check to avoid duplicated results of the target
+**AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
-*This is a very simple documentation on the Tool. It still doesn't contain many information on the many features of the tool & on how to effectively use the tool.*
 
-*Help improve the [documentation](https://github.com/3nock/sub3suite_doc).*
+## Usage: 
+
+1. Set the scan configuration by clicking the **config** button, setting the values and save.
+2. **If single Target:** enter target (url) on the LineEdit. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (url) on the ListView marked by **Targets**. 
+3. Start The scan
+
+## Actions: 
+
+Details on the actions for the obtained results.
+
+ - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
+
+1. **Clear:** Clears the results and the progress bar.
+2. **Expand & Collapse:** Expands the all areas of the result tree and Collapse all areas of the result tree respectively
+3. **Save:** Saves the obtained Results To a File. Saves in Json format
+4. **Copy:** Copies the results on the clipboard. Copies in Json format
+5. **Send To Project:** Sends the Obtained results to the project explorer.
+5. **Send URL To ENGINE*:** Sends the Obtained URL to the choosen Engine.
+
+**NOTE:**
+	If you have filtered the results using the filter. the above actions will only be performed on the remaing results after filter

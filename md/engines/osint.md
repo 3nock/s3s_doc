@@ -1,9 +1,8 @@
 # OSINT ENGINE 
 
-***Disclaimer 1:** This is a very simple documentation on the Tool. It still doesn't contain many information on the many features of the tool & on how to effectively use the tool.
-Help improve the [documentation](https://github.com/3nock/s3s_doc)*
+***Disclaimer 1:** This is a very simple documentation on the Tool. It still doesn't contain many information on the many features of the tool & on how to effectively use the tool. Help improve the [documentation](https://github.com/3nock/s3s_doc).*
 
-***Disclaimer 2:** Incase of an unexpected error or erronous results please reach out by openning an [issue](https://github.com/3nock/sub3suite/issues) on the repo or on [Telegram](https://t.me/sub3suite)*
+***Disclaimer 2:** Incase of an unexpected error or erronous results please reach out by openning an [issue](https://github.com/3nock/sub3suite/issues) on the repo or on [Telegram](https://t.me/sub3suite) chat*.
 
 ## What is? 
 The Osint engine is used for obtaining different types of osint data from different input types.
@@ -65,22 +64,22 @@ You can set configurations for your scan to run on. click **config**, set the va
 ## Example & Usage 
 To use the OSINT Engine for enumeration take the following steps:
 
-1. Choose The Input and Output type for your scan i.e. if you want to obtain subdomains from an IpAddress then choose an input as IpAddress and output as Subdomains
+1. Choose The `Input` and `Output` type for your scan i.e. if you want to obtain subdomains from an IpAddress then choose an input as IpAddress and output as Subdomains
    e.g 
    
    <img src=images/osint_input.png>
    
 2. Enter Target/Targets:
 
-	a. for single target just enter the targets on the lineEdit.
+	a. for **single target** just enter the targets on the lineEdit.
 	
 	<img src=images/osint_target.png>
 	
-	b. For multiple targets; check the **Multiple Targets** checkbox and add your targets to the listView.
+	b. For **multiple targets**; check the **Multiple Targets** checkbox and add your targets to the listView.
 	
 	<img src=images/osint_targets.png>
 	
-3. Choose OSINT modules to use. Check the check-boxes of the modules you want to pull data from. You can check from one to as many as you want.
+3. Choose **OSINT modules** to use. Check the check-boxes of the modules you want to pull data from. You can check from one to as many as you want.
 
 	<img src=images/osint_modules.png>
 	
@@ -93,9 +92,9 @@ To use the OSINT Engine for enumeration take the following steps:
 	
 	<img src=images/apikeys.png>
 	
-4. Start the Scan. click Start to Start the scan and wait for results.
+4. Start the Scan. click `Start` to Start the scan and wait for results.
 
-5. After the scan is finished and you've obtained the results, several actions can be performed on the obtained results.
+5. After the scan is finished and you've obtained the results, several `Actions` can be performed on the obtained results.
 
 ## Actions: 
 
