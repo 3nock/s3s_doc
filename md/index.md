@@ -1,4 +1,4 @@
-# Getting started with Sub3 Suite
+# Getting started with [Sub3 Suite](https://github.com/3nock/sub3suite)
 
 ## Launching 
 

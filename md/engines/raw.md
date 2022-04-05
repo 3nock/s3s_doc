@@ -51,7 +51,7 @@ They are further categorized into different sub-groups depending on the type tha
 	For modules in the **API Keys Required** category you must have an API Key to query that module. You can obtain API Keys by opening API Keys Module -> scroll to your module of choice and
 	click **Get...** and it will direct you to the page where you can obtain the API key, Enter the Key and Save.
 	
-	<img src=images/osint_key.png>
+	<img src=images/raw_key.png>
 	
 	<img src=images/apikeys.png>
 	
