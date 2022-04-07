@@ -94,6 +94,8 @@ They are further categorized into different sub-groups depending on the type tha
 
 Details on the actions for the obtained results.
 
+<img src=images/raw_actions.png>
+
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 
 1. **Clear:** Clears the results and the progress bar.

@@ -38,20 +38,46 @@ This Tool uses multiple threads as alocated by the user to perform enumeration.
 
 <h2> Scan Configuration values: </h2><br>
 
-<b> Timeout - </b> Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 500<br>
+<img src=images/ssl_config.png><br><br>
+
+<b> Timeout - </b> Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000<br>
 <b> No Duplicates - </b> Check to avoid duplicated results of the target<br>
-<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br>
+<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br><br>
 
+<h2> Usage & Examples</h2>
 
-<h2> Usage: </h2>
+1. Choose the <b>output(scan type)</b> first. <b>Alternative Names: </b> pulls alternative/associated names from the SSL certificate <b>Certificate Hash:</b> returns the SSL certificate hash(sha1/sha256) 
+<b>SSL Certificate:</b> returns the SSL Certificate<br><br>
 
-1. Set the scan configuration by clicking the <b>config</b> button, setting the values and save.<br>
-2. <b>If single Target:</b> enter target (domain/hostname) on the LineEdit. <b>If multiple Targets:</b> check the <b>Multile Targes</b> checkbox and enter the target values (ssl certificate hash) on the ListView marked by <b> Targets </b>. <br>
-3. Start The scan<br>
+<img src=images/ssl_output.png><br><br>
+
+2. Choose the protocal to connect to. These protocals use TLS for secured connection hence SSL certificates can be pulled from.<br><br>
+
+<img src=images/ssl_protocal.png><br><br>
+
+3. Enter Target/Targets:<br><br>
+
+	a. for <b>single target</b> just enter the targets on the lineEdit.<br><br>
+	
+	<img src=images/ssl_target.png><br><br>
+	
+	b. For <b>multiple targets</b>; check the <b>Multiple Targets</b> checkbox, add your targets to the listView.<br><br>
+	
+	<img src=images/ssl_targets.png><br><br>
+
+4. <b>Start</b> scan. You can <b>Pause, Resume</b> and <b>Stop</b> the scan.<br><br>
+
+5. You can also <b>Re-Scan</b> failed scans(scans that returned an error) with different configurations.<br><br>
+
+<img src=images/brute_rescan.png><br><br>
+
+6. Several <b><i>Actions</b></i> can be performed on the obtained results.
 
 <h2> Actions: </h2>
 
-Details on the actions for the obtained results.<br>
+Details on the actions for the obtained results.<br><br>
+
+<img src=images/ssl_actions.png><br><br>
 
  - The Actions on Results are accessible via the <b>Actions ></b> button and <b>Right-Click</b> on the Results. & are only active when the results are present<br>
 
@@ -60,6 +86,7 @@ Details on the actions for the obtained results.<br>
 3. <b> Save: </b> Saves the obtained Results To a File. Saves in Json format<br>
 4. <b> Copy: </b> Copies the results on the clipboard. Copies in Json format<br>
 5. <b> Send To Project: </b> Sends the Obtained results to the project explorer.<br><br>
+6. <b> Send Hostname To Engine*: </b> Sends Alternative names Engine of choice.<br><br>
 
 <b> NOTE: </b><br>
 	If you have filtered the results using the filter. the above actions will only be performed on the remaing results after filter<br>

@@ -23,23 +23,40 @@ You can obtain URL from the <a href=../engines/osint.html>OSINT Engine</a> of Su
 
 <b> Multiple Targets search: </b> Search mulitple targets and the enumerator will provide the results for every targets.
 
-
 <h2> Scan Configuration values: </h2><br>
+
+<img src=images/ssl_config.png><br><br>
+
 <b> Threads - </b> Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
 <b> Timeout - </b> Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000<br>
 <b> No Duplicates - </b> Check to avoid duplicated results of the target<br>
-<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br>
+<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br><br>
 
+<h2> Usage & Examples</h2>
 
-<h2> Usage: </h2>
+1. Enter Target/Targets:<br><br>
 
-1. Set the scan configuration by clicking the <b>config</b> button, setting the values and save.<br>
-2. <b>If single Target:</b> enter target (url) on the LineEdit. <b>If multiple Targets:</b> check the <b>Multile Targes</b> checkbox and enter the target values (url) on the ListView marked by <b> Targets </b>. <br>
-3. Start The scan<br>
+	a. for <b>single target</b> just enter the targets on the lineEdit.<br><br>
+	
+	<img src=images/url_target.png><br><br>
+	
+	b. For <b>multiple targets</b>; check the <b>Multiple Targets</b> checkbox, add your targets to the listView.<br><br>
+	
+	<img src=images/url_targets.png><br><br>
+	
+2. <b>Start</b> scan. You can <b>Pause, Resume</b> and <b>Stop</b> the scan.<br><br>
+
+3. You can also <b>Re-Scan</b> failed scans(scans that returned an error) with different configurations.<br><br>
+
+<img src=images/brute_rescan.png><br><br>
+
+4. Several <b><i>Actions</b></i> can be performed on the obtained results.
 
 <h2> Actions: </h2>
 
-Details on the actions for the obtained results.<br>
+Details on the actions for the obtained results.<br><br>
+
+<img src=images/url_actions.png><br><br>
 
  - The Actions on Results are accessible via the <b>Actions ></b> button and <b>Right-Click</b> on the Results. & are only active when the results are present<br>
 

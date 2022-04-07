@@ -30,16 +30,55 @@ You can obtain Passive Domains/Hostnames from the <a href=../engines/osint.html>
 <b> Output: </b> Resolved Domain, IPv4,IPv6 & open Ports<br>
 
 <h2> Scan Configuration values: </h2><br>
+
+<img src=images/active_config.png><br><br>
+
 <b> Threads - </b> Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
 <b> Timeout - </b> Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000<br>
-<b> Record Type - </b> Record Type to lookup, A -> IpV4, AAAA -> IpV6, ANY -> IpV4 and/or IpV6.<br>
-<b> Nameserver - </b> - Nameservers to use for DNS lookup.<br>
+<b> Record Type - </b> Record Type to lookup, A(IpV4), AAAA(IpV6), ANY(IpV4 and/or IpV6).<br>
 <b> No Duplicates - </b> Check to avoid duplicated results of the target<br>
-<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br>
+<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br><br>
+
+<img src=images/brute_nameservers.png><br><br>
+
+<b> Nameservers - </b> - Nameservers to use for DNS lookup. You can choose; <br>
+<b><i>single nameserver:</i></b> by checking the single nameserver radio-button and choose the nameserver in the combo-box<br>
+<b><i>random nameserver:</i></b> by checking the random nameserver radio-button and Sub3 Suite will use its default set of nameservers, assigning them randomly<br>
+<b><i>custom nameserver:</i></b> by checking the random nameserver radio-button and enter the ip addresses of the nameservers you want to use<br>
+
+<h2> Usage & Examples</h2>
+
+1. Choose the <b>output(scan type)</b> first. <b>active DNS: </b> Resolves DNS records for target(s) and <b>Active PORT:</b> Port scans The Target(s)<br><br>
+
+<img src=images/active_output.png><br><br>
+
+3. Enter Target/Targets:<br><br>
+
+	a. for <b>single target</b> just enter the targets on the lineEdit.<br><br>
+	
+	<img src=images/active_target.png><br><br>
+	
+	b. For <b>multiple targets</b>; check the <b>Multiple Targets</b> checkbox, add your targets to the listView.<br><br>
+	
+	<img src=images/active_targets.png><br><br>
+	
+4. For port scan. input the ports, <b>Default:</b> scans for common ports, <b>Range:</b> scans for a range of ports, <b>Custom:</b> Scans for a port or list ports<br><br>
+
+<img src=images/active_ports.png><br><br>
+
+5. <b>Start</b> scan. You can <b>Pause, Resume</b> and <b>Stop</b> the scan.<br><br>
+
+6. You can also <b>Re-Scan</b> failed scans(scans that returned an error) with different configurations.<br><br>
+
+<img src=images/brute_rescan.png><br><br>
+
+7. Several <b><i>Actions</b></i> can be performed on the obtained results.
 
 <h2> Actions: </h2>
 
-Details on the actions for the obtained results.<br>
+Details on the actions for the obtained results.<br><br>
+
+<img src=images/active_actions.png><br><br>
 
  - The Actions on Results are accessible via the <b>Actions ></b> button and <b>Right-Click</b> on the Results. & are only active when the results are present<br>
 

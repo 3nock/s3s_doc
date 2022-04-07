@@ -34,15 +34,54 @@ You can obtain Passive Domains/Hostnames from the [OSINT Engine](../engines/osin
 **Output:** DNS Records: A,AAAA,NS,MX,SRV,TXT,CNAME,ANY
 
 ## Scan Configuration values: 
+
+<img src=images/dns_config.png>
+
 **Threads -** Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
-**Nameserver -** - Nameservers to use for DNS lookup.
 **No Duplicates -** Check to avoid duplicated results of the target
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
+
+<img src=images/brute_nameservers.png>
+
+**Nameservers -** - Nameservers to use for DNS lookup. You can choose; 
+***single nameserver:*** by checking the single nameserver radio-button and choose the nameserver in the combo-box
+***random nameserver:*** by checking the random nameserver radio-button and Sub3 Suite will use its default set of nameservers, assigning them randomly
+***custom nameserver:*** by checking the random nameserver radio-button and enter the ip addresses of the nameservers you want to use
+
+## Usage & Examples
+
+1. Choose the DNS Record you want to enumerate; **A,AAAA,NS,MX,CNAME,TXT,ANY,SRV** note that **ANY** and **SRV** Records can only be enumerated alone without other records checked
+
+<img src=images/dns_output.png>
+
+2. Enter Target/Targets:
+
+	a. for **single target** just enter the targets on the lineEdit.
+	
+	<img src=images/dns_target.png>
+	
+	b. For **multiple targets**; check the **Multiple Targets** checkbox, add your targets to the listView.
+	
+	<img src=images/dns_targets.png>
+	
+3. For SRV scan. input the srv wordlist to be used for SRV DNS lookup
+
+<img src=images/dns_srv.png>
+
+4. **Start** scan. You can **Pause, Resume** and **Stop** the scan.
+
+5. You can also **Re-Scan** failed scans(scans that returned an error) with different configurations.
+
+<img src=images/brute_rescan.png>
+
+6. Several ***Actions*** can be performed on the obtained results.
 
 ## Actions: 
 
 Details on the actions for the obtained results.
+
+<img src=images/dns_actions.png>
 
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 

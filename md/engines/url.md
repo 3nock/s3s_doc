@@ -24,21 +24,39 @@ You can obtain URL from the [OSINT Engine](./engines/osint.html) of Sub3 Suite
 
 
 ## Scan Configuration values: 
+
+<img src=images/ssl_config.png>
+
 **Threads -** Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
 **No Duplicates -** Check to avoid duplicated results of the target
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
+## Usage & Examples
 
-## Usage: 
+1. Enter Target/Targets:
 
-1. Set the scan configuration by clicking the **config** button, setting the values and save.
-2. **If single Target:** enter target (url) on the LineEdit. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (url) on the ListView marked by **Targets**. 
-3. Start The scan
+	a. for **single target** just enter the targets on the lineEdit.
+	
+	<img src=images/url_target.png>
+	
+	b. For **multiple targets**; check the **Multiple Targets** checkbox, add your targets to the listView.
+	
+	<img src=images/url_targets.png>
+	
+2. **Start** scan. You can **Pause, Resume** and **Stop** the scan.
+
+3. You can also **Re-Scan** failed scans(scans that returned an error) with different configurations.
+
+<img src=images/brute_rescan.png>
+
+4. Several ***Actions*** can be performed on the obtained results.
 
 ## Actions: 
 
 Details on the actions for the obtained results.
+
+<img src=images/url_actions.png>
 
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 

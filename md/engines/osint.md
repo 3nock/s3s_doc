@@ -100,6 +100,8 @@ To use the OSINT Engine for enumeration take the following steps:
 
 Details on the actions for the obtained results.
 
+<img src=images/osint_actions.png>
+
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 
 1. **Clear:** Clears the results and the progress bar.

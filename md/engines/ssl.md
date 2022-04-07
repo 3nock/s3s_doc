@@ -37,20 +37,46 @@ This Tool uses multiple threads as alocated by the user to perform enumeration.
 
 ## Scan Configuration values: 
 
-**Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 500
+<img src=images/ssl_config.png>
+
+**Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
 **No Duplicates -** Check to avoid duplicated results of the target
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
+## Usage & Examples
 
-## Usage: 
+1. Choose the **output(scan type)** first. **Alternative Names:** pulls alternative/associated names from the SSL certificate **Certificate Hash:** returns the SSL certificate hash(sha1/sha256) 
+**SSL Certificate:** returns the SSL Certificate
 
-1. Set the scan configuration by clicking the **config** button, setting the values and save.
-2. **If single Target:** enter target (domain/hostname) on the LineEdit. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (ssl certificate hash) on the ListView marked by **Targets**. 
-3. Start The scan
+<img src=images/ssl_output.png>
+
+2. Choose the protocal to connect to. These protocals use TLS for secured connection hence SSL certificates can be pulled from.
+
+<img src=images/ssl_protocal.png>
+
+3. Enter Target/Targets:
+
+	a. for **single target** just enter the targets on the lineEdit.
+	
+	<img src=images/ssl_target.png>
+	
+	b. For **multiple targets**; check the **Multiple Targets** checkbox, add your targets to the listView.
+	
+	<img src=images/ssl_targets.png>
+
+4. **Start** scan. You can **Pause, Resume** and **Stop** the scan.
+
+5. You can also **Re-Scan** failed scans(scans that returned an error) with different configurations.
+
+<img src=images/brute_rescan.png>
+
+6. Several ***Actions*** can be performed on the obtained results.
 
 ## Actions: 
 
 Details on the actions for the obtained results.
+
+<img src=images/ssl_actions.png>
 
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 

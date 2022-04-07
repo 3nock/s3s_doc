@@ -32,17 +32,80 @@ You can obtain Passive Domains/Hostnames from the <a href=../engines/osint.html>
 <b> Output: </b> Resolved Domain, IPv4 & IPv6<br>
 
 <h2> Scan Configuration values: </h2><br>
+
+<img src=images/brute_config.png><br><br>
+
 <b> Threads - </b> Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
 <b> Timeout - </b> Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000<br>
-<b> Record Type - </b> Record Type to lookup, A -> IpV4, AAAA -> IpV6, ANY -> IpV4 and/or IpV6.<br>
+<b> Record Type - </b> Record Type to lookup, A(IpV4), AAAA(IpV6), ANY(IpV4 and/or IpV6).<br>
 <b> Wildcard - </b> Check if you want to detect and mitigate wildcards e.g *.example.com<br>
-<b> Nameserver - </b> - Nameservers to use for DNS lookup.<br>
 <b> No Duplicates - </b> Check to avoid duplicated results of the target<br>
-<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br>
+<b> AutoSave To Project - </b> Sends the obtained results directly to the project explorer as the scan progresses<br><br>
+
+<img src=images/brute_nameservers.png><br><br>
+
+<b> Nameservers - </b> - Nameservers to use for DNS lookup. You can choose; <br>
+<b><i>single nameserver:</i></b> by checking the single nameserver radio-button and choose the nameserver in the combo-box<br>
+<b><i>random nameserver:</i></b> by checking the random nameserver radio-button and Sub3 Suite will use its default set of nameservers, assigning them randomly<br>
+<b><i>custom nameserver:</i></b> by checking the random nameserver radio-button and enter the ip addresses of the nameservers you want to use<br>
+
+<h2> Wordlist </h2>
+Wordlist for bruteforcing subdomain names. Sub3 Suite has a wordlist feature where you can choose or generate wordlist for bruteforcing subdomains/TLD<br><br>
+
+<h3> In Choose </h3><br>
+
+<img src=images/brute_choose_wl.png><br><br>
+You have the option to choose <b><i>Default wordlist</i></b> that comes with with Sub3 Suite or <b><i>Custom wordlist</i></b> which you have saved<br><br>
+
+<img src=images/brute_custom_wl.png><br>
+An option to create and save a new custom wordlist that you can use later on<br><br>
+
+<h3> In Generate </h3>
+
+You can generate wordlist from within Sub3 Suite;<br><br>
+
+<img src=images/brute_generate_wl.png><br><br>
+
+To Generate wordlist, <b>check the box</b> of the type of wordlist you want to generate enter the required information and generate.<br>
+<b><i>A-Z: </i></b> Generates worldist by combining the alphabet characters. Enter the number of combinations you want and generate ie. <b>1:</b> no combination e.g A, B, C etc <b>2: </b> combination of two alphabets e.g. AA, AB, AC etc. It is recomended to to put a combination count of more than 5 as it will weigh down on the machine's processing power and memory<br>
+<b><i>Numbers: </i></b> Generates numbers as a wordlist. Any range of numbers can be generated.<br>
+<b><i>Dates: </i></b> Generates dates as a wordlist.<br>
+<b><i>Substitution(hymoglyphs): </i></b> Generate wordlist by substituting characters from the input wordlist creating hymoglyphs wordlist. e.g. if you <b>input:</b> <i>google.com</i> it will <b>output:</b> <i>go0gle.com,go0gle.com,g00gle.com,qoogle.com,q00gle.com</i> etc. It is recommended
+not to input a large wordlist for substitution wordlist generation as it takes much computing power and memory.
+
+<h2> Usage & Examples</h2>
+
+1. Choose the <b>output(scan type)</b> first. <b>Subdomain: </b> does subdomain enumeration and <b>TLD:</b> does Top level domain enumeration<br><br>
+
+<img src=images/brute_output.png><br><br>
+
+2. <b>Enter/Choose/Generate</b> wordlist to be used for bruteforcing.<br><br>
+
+<img src=images/brute_wordlist.png><br><br>
+
+3. Enter Target/Targets:<br><br>
+
+	a. for <b>single target</b> just enter the targets on the lineEdit.<br><br>
+	
+	<img src=images/brute_target.png><br><br>
+	
+	b. For <b>multiple targets</b>; check the <b>Multiple Targets</b> checkbox, add your targets to the listView.<br><br>
+	
+	<img src=images/brute_targets.png><br><br>
+	
+4. <b>Start</b> scan. You can <b>Pause, Resume</b> and <b>Stop</b> the scan.<br><br>
+
+5. You can also <b>Re-Scan</b> failed scans(scans that returned an error) with different configurations.<br><br>
+
+<img src=images/brute_rescan.png><br><br>
+
+5. Several <b><i>Actions</b></i> can be performed on the obtained results.
 
 <h2> Actions: </h2>
 
-Details on the actions for the obtained results.<br>
+Details on the actions for the obtained results.<br><br>
+
+<img src=images/brute_actions.png><br><br>
 
  - The Actions on Results are accessible via the <b>Actions ></b> button and <b>Right-Click</b> on the Results. & are only active when the results are present<br>
 
