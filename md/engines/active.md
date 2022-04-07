@@ -25,7 +25,9 @@ You can obtain Passive Domains/Hostnames from the [OSINT Engine](../engines/osin
 6. Supports enumeration by Pinging The targets.
 
 ## Input Output: 
+
 **Input:**Domain/Hostname
+
 **Output:**Resolved Domain, IPv4,IPv6 & open Ports
 
 
@@ -34,16 +36,23 @@ You can obtain Passive Domains/Hostnames from the [OSINT Engine](../engines/osin
 <img src=images/active_config.png>
 
 **Threads -** Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
+
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+
 **Record Type -** Record Type to lookup, A(IpV4), AAAA(IpV6), ANY(IpV4 and/or IpV6).
+
 **No Duplicates -** Check to avoid duplicated results of the target
+
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
 <img src=images/brute_nameservers.png>
 
 **Nameservers -** - Nameservers to use for DNS lookup. You can choose; 
+
 ***single nameserver:*** by checking the single nameserver radio-button and choose the nameserver in the combo-box
+
 ***random nameserver:*** by checking the random nameserver radio-button and Sub3 Suite will use its default set of nameservers, assigning them randomly
+
 ***custom nameserver:*** by checking the random nameserver radio-button and enter the ip addresses of the nameservers you want to use
 
 ## Usage & Examples

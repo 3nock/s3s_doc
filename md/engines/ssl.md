@@ -27,7 +27,9 @@ The Tool returns results as SSL Certificates full info, SSL Cert Hash(sha1 && sh
 This Tool uses multiple threads as alocated by the user to perform enumeration.
 
 ## Input Output: 
+
 **Input:** Domain/Hostname
+
 **Output:** Alternative/Associated Names, Certicate Hash(sha1/sha256) & The Certificate
 
 ## Features: 
@@ -40,7 +42,9 @@ This Tool uses multiple threads as alocated by the user to perform enumeration.
 <img src=images/ssl_config.png>
 
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+
 **No Duplicates -** Check to avoid duplicated results of the target
+
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
 ## Usage & Examples

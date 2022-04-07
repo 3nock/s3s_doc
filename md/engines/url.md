@@ -16,6 +16,7 @@ You can obtain URL from the [OSINT Engine](./engines/osint.html) of Sub3 Suite
 ## Input Output 
 
 **Input:** URL
+
 **Output:** URL Info: status code, banner(server) and content type
 
 ## Features: 
@@ -28,8 +29,11 @@ You can obtain URL from the [OSINT Engine](./engines/osint.html) of Sub3 Suite
 <img src=images/ssl_config.png>
 
 **Threads -** Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
+
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+
 **No Duplicates -** Check to avoid duplicated results of the target
+
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
 ## Usage & Examples

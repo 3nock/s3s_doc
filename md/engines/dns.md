@@ -30,7 +30,9 @@ You can obtain Passive Domains/Hostnames from the [OSINT Engine](../engines/osin
 4. SRV wordlist is also provided and can be modified as per user's liking
 
 ## Input Output: 
+
 **Input:** Domain/Hostname
+
 **Output:** DNS Records: A,AAAA,NS,MX,SRV,TXT,CNAME,ANY
 
 ## Scan Configuration values: 
@@ -38,15 +40,21 @@ You can obtain Passive Domains/Hostnames from the [OSINT Engine](../engines/osin
 <img src=images/dns_config.png>
 
 **Threads -** Number of threads to use for quering the targets. If number of threads is greater that the number of targets, then one thread per target will be used.
+
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+
 **No Duplicates -** Check to avoid duplicated results of the target
+
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
 <img src=images/brute_nameservers.png>
 
 **Nameservers -** - Nameservers to use for DNS lookup. You can choose; 
+
 ***single nameserver:*** by checking the single nameserver radio-button and choose the nameserver in the combo-box
+
 ***random nameserver:*** by checking the random nameserver radio-button and Sub3 Suite will use its default set of nameservers, assigning them randomly
+
 ***custom nameserver:*** by checking the random nameserver radio-button and enter the ip addresses of the nameservers you want to use
 
 ## Usage & Examples
