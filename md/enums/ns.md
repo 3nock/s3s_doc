@@ -18,6 +18,7 @@ sub3suite's NS Enumerator queries this data from OSINT sources that provide reve
 ## Input Output 
 
 **Input:** Nameserver
+
 **Output:** Domains
 
 ## Features: 
@@ -28,19 +29,41 @@ sub3suite's NS Enumerator queries this data from OSINT sources that provide reve
 ## Scan Configuration values: 
 
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+
 **No Duplicates -** Check to avoid duplicated results of the target
+
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
 
 ## Usage: 
 
 1. Set the scan configuration by clicking the **config** button, setting the values and save.
-2. **If single Target:** enter target (nameserver) on the LineEdit. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (nameserver) on the ListView marked by **Targets**. 
-3. Start The scan
+
+<img src=images/enum_config.png>
+
+2. Enter Target/Targets;
+
+ a. **If single Target:** enter target (nameserver) on the LineEdit. 
+ 
+ <img src=images/ns_target.png>
+ 
+ b. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (nameserver) on the ListView marked by **Targets**. 
+ 
+ <img src=images/ns_targets.png>
+ 
+3. choose the module to use for enumeration.
+
+ <img src=images/ns_modules.png>
+
+4. Start The scan
+
+5. Several ***Actions*** can be performed on the obtained results.
 
 ## Actions: 
 
 Details on the actions for the obtained results.
+
+	<img src=images/enum_actions.png>
 
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 

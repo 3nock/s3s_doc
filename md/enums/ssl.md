@@ -28,6 +28,7 @@ You can obtain SSL from the [OSINT Engine](../engines/osint.md) and [SSL Engine]
 ## Input Output 
 
 **Input:** SSL Certificate Hash
+
 **Output:** The SSL Certificate
 
 ## Features: 
@@ -38,19 +39,37 @@ You can obtain SSL from the [OSINT Engine](../engines/osint.md) and [SSL Engine]
 ## Scan Configuration values: 
 
 **Timeout -** Time for performing the lookup in milliseconds (terminates connection if timeout). It is advised for the timeout to be greater than 1000
+
 **No Duplicates -** Check to avoid duplicated results of the target
+
 **AutoSave To Project -** Sends the obtained results directly to the project explorer as the scan progresses
 
 
 ## Usage: 
 
 1. Set the scan configuration by clicking the **config** button, setting the values and save.
-2. **If single Target:** enter target (ssl certificate hash) on the LineEdit. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (ssl certificate hash) on the ListView marked by **Targets**. 
+
+<img src=images/enum_config.png>
+
+2. Enter Target/Targets;
+
+ a. **If single Target:** enter target (ssl certificate hash) on the LineEdit. 
+ 
+ <img src=images/ssl_target.png>
+ 
+ b. **If multiple Targets:** check the **Multile Targes** checkbox and enter the target values (ssl certificate hash) on the ListView marked by **Targets**. 
+ 
+ <img src=images/ssl_targets.png>
+
 3. Start The scan
+
+4. Several ***Actions*** can be performed on the obtained results.
 
 ## Actions: 
 
 Details on the actions for the obtained results.
+
+	<img src=images/enum_actions.png>
 
  - The Actions on Results are accessible via the **Actions >** button and **Right-Click** on the Results. & are only active when the results are present
 
